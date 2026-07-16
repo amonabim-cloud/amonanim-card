@@ -1,7 +1,7 @@
 const CARDS = [
 
     {
-        owner: "محمد مهدی عمونبی",
+        owner: "محمد مهدی  ..عمونبی",
         bank: "بانک مهر ایران",
         bankLogo: "bank-logo.png",
         card: "6063731193290732",
