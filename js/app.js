@@ -43,16 +43,19 @@ id="card-${card.id}"
 data-card="${card.cardNumber}">
 ${hideCardNumber(card.cardNumber)}
 
-       <p>
-    👤 ${person.name}
-    </p>
+<div class="number">
 
+    <span
+        id="card-${card.id}"
+        data-card="${card.cardNumber}">
+        ${hideCardNumber(card.cardNumber)}
+    </span>
 
-    <p>
-    💳 ${card.title || "کارت بانکی"}
-    </p>
+</div>
 
+<p>👤 ${person.name}</p>
 
+<p>💳 ${card.title || "کارت بانکی"}</p>
 
 <button onclick="copyText('${card.cardNumber}')">
 📋 کپی کارت
@@ -65,9 +68,6 @@ ${hideCardNumber(card.cardNumber)}
 <button onclick="toggleCard('card-${card.id}')">
 👁 نمایش
 </button>
-
-
-
 </div>
 
 `;
