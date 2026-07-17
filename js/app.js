@@ -72,6 +72,18 @@ function formatCardNumber(number) {
     return number.replace(/(.{4})/g, "$1 ");
 }
 loadData();
+
+<button onclick="copyText('${card.cardNumber}')">
+📋 کپی کارت
+</button>
+
+<button onclick="copyText('${card.sheba}')">
+🏦 کپی شبا
+</button>
+
+<button onclick="toggleCard('card-${card.id}')">
+👁 نمایش
+</button>
 function copyText(text) {
 
     navigator.clipboard.writeText(text);
