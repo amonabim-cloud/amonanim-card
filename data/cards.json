@@ -4,6 +4,7 @@
     "bankId": "meli",
     "cardNumber": "6037991234567890",
     "sheba": "IRxxxxxxxxxxxxxxxxxxxxxxxx",
-    "accountNumber": "1234567890"
+    "accountNumber": "1234567890",
+    "default": true
   }
 ]
