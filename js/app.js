@@ -55,9 +55,19 @@ ${hideCardNumber(card.cardNumber)}
     </p>
 
 
-    <button onclick="copyText('${card.cardNumber}')">
-    📋 کپی کارت
-    </button>
+
+<button onclick="copyText('${card.cardNumber}')">
+📋 کپی کارت
+</button>
+
+<button onclick="copyText('${card.sheba}')">
+🏦 کپی شبا
+</button>
+
+<button onclick="toggleCard('card-${card.id}')">
+👁 نمایش
+</button>
+
 
 
 </div>
@@ -73,17 +83,6 @@ function formatCardNumber(number) {
 }
 loadData();
 
-<button onclick="copyText('${card.cardNumber}')">
-📋 کپی کارت
-</button>
-
-<button onclick="copyText('${card.sheba}')">
-🏦 کپی شبا
-</button>
-
-<button onclick="toggleCard('card-${card.id}')">
-👁 نمایش
-</button>
 function copyText(text) {
 
     navigator.clipboard.writeText(text);
