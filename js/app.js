@@ -9,6 +9,8 @@ const banks = await fetch("data/banks.json")
 const cards = await fetch("data/cards.json")
 .then(r => r.json());
 
+   console.log(cards); 
+
 
 const container = document.getElementById("cards");
 
